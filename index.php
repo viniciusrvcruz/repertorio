@@ -20,22 +20,7 @@
         <section id="nome-repertorio">
             <div class="nome-da-musica">
                 <h1>Repertorio do Vinicius</h1>
-                <h3><?php 
-                        include('config.php');
-
-                        $sql = "SELECT COUNT(*) as total FROM musicas";
-                        $resultado = mysqli_query($conn, $sql);
-                        $linha = mysqli_fetch_assoc($resultado);
-                        $total = $linha["total"];
-                        if($total > 1) {
-                            print $total. " músicas";
-                        } else if($total == 1) {
-                            print $total. " música";
-                        } else {
-                            print "Nenhuma música";
-                        }
-                        
-                    ?></h3>
+                <h3></h3>
             </div>
             <div class="icons-menu-user">
                 <span class="material-symbols-outlined icon-menu">
@@ -70,11 +55,11 @@
             <form action="salvar-musica.php" method="post">
                 <div>
                     <label for="nomemusica">Nome da música</label>
-                    <input type="text" name="nomemusica" id="nomemusica" placeholder="Digite o nome da música">
+                    <input type="text" name="nomemusica" id="nomemusica" placeholder="Digite o nome da música" required>
                 </div>
                 <div>
                     <label for="autormusica">Banda ou Cantor(a)</label>
-                    <input type="text" name="autormusica" id="autormusica" placeholder="Digite banda ou cantor(a)">
+                    <input type="text" name="autormusica" id="autormusica" placeholder="Digite banda ou cantor(a)" required>
                 </div>
                 <div>
                     <label for="tommusica">Tom da música</label>

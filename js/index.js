@@ -2,6 +2,13 @@ let pesquisar = document.querySelector('#pesquisar-musica')
 let divMusica = document.querySelectorAll('.musica-container')
 let divNomeMusica = document.querySelectorAll('.link-musica')
 let sectionMusicas = document.querySelector('#musicas')
+let qtdMusicas = document.querySelector('.nome-da-musica h3')
+
+if(divMusica != null && divMusica.length > 1) {
+    qtdMusicas.innerHTML = `${divMusica.length} Músicas`
+} else {
+    qtdMusicas.innerHTML = `${divMusica.length} Música`
+}
 
 pesquisar.addEventListener('input', () => {
     mostrarPesquisa()
@@ -36,7 +43,7 @@ function mostrarPesquisa() {
         document.querySelector('#button-pesquisar').style.display = 'none'
         
         for(let i = 0; i < divMusica.length; i++) {
-            if(divNomeMusica[i].innerHTML.toLowerCase().includes(`${pesquisar.value.toLowerCase()}`)) {
+            if(divNomeMusica[i].innerHTML.normalize('NFD').replace(/[\u0300-\u036f\s'"`]/g, '').toLowerCase().includes(`${pesquisar.value.replace(/[\u0300-\u036f\s'"`]/g, '').toLowerCase()}`) || divNomeMusica[i].innerHTML.toLowerCase().includes(`${pesquisar.value.toLowerCase()}`)) {
                 sectionMusicas.style.display = 'block'
                 divMusica[i].style.display = 'flex'
                 continue

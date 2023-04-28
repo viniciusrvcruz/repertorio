@@ -147,8 +147,14 @@ div.musica-autor {
 }
 
 div.link-musica {
+    display: -webkit-box;
     text-decoration: none;
+    padding-right: 5px;
     color: black;
+    -webkit-line-clamp: 1; /** número de linhas que você quer exibir */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 p.autor {
@@ -158,6 +164,7 @@ p.autor {
 
 p.tom-musica {
     text-align: center;
+    white-space: nowrap;
 }
 section#musicas-pesquisa {
     margin: 15px 0px 50px 0px;
