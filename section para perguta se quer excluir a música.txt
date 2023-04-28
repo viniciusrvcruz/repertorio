@@ -1,0 +1,11 @@
+<section class="excluir-musica">
+    <div class="excluir-musica-container">
+         <div class="excluir-musica-close">
+            <h1>Deseja mesmo excluir a música <?php print$row->nome; ?>?</h1>
+            <img src="Icons/close_icon.png" alt="Fechar"class="fechar-excluir-musica">
+        </div>
+        <form action="salvar-excluir-musica.php" method="POST">
+            <input type="hidden" name="id" value="<?php print $row->id; ?>">
+            <button type="submit">Confirmar</button>
+    </div>
+</section>

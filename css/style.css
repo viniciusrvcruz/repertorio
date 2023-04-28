@@ -1,0 +1,352 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+header {
+    padding: 10px 10px 5px 10px;
+    background-color: rgb(248, 248, 248);
+    border-bottom: 1px solid rgb(107, 107, 107);
+}
+
+h2 {
+    display: inline;
+    font-size: 1.7em;
+    margin-left: 10px;
+    border-bottom: 3px solid #46ACEB;
+    padding-bottom: 5px;
+}
+
+section#nome-repertorio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+div.nome-da-musica {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+div.icons-menu-user {
+    display: flex;
+    flex-direction: column;
+}
+
+span.icon-menu {
+    padding-bottom: 8px;
+}
+
+div#pesquisar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(248, 248, 248);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+div.container-pesquisar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    border: 1px solid rgb(107, 107, 107);
+    border-radius: 10px;
+}
+
+button#button-pesquisar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#button-pesquisar img {
+    width: 20px;
+}
+
+button#button-voltar-pesquisar {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    cursor: pointer;
+}
+
+#button-voltar-pesquisar img {
+    width: 22px;
+}
+
+input#pesquisar-musica {
+    font-size: 1em;
+    width: 85%;
+    height: 35px;
+    padding: 0px 10px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 0px 10px 10px 0px;
+}
+
+section#musicas {
+    margin: 15px 0px 50px 0px;
+    background-color: rgb(248, 248, 248);
+    padding: 5px 15px 15px 15px;
+    border-radius: 15px;
+}
+
+div.musica-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-bottom: 1px solid rgb(170, 170, 170);
+    cursor: pointer;
+}
+
+div.video-musica-autor-container {
+    display: flex;
+}
+
+section#musicas img {
+    width: 60px;
+    margin-right: 10px;
+    border-radius: 4px 4px;
+}
+
+div.musica-autor {
+    display: flex;
+    flex-direction: column;
+}
+
+div.link-musica {
+    text-decoration: none;
+    color: black;
+}
+
+p.autor {
+    color: rgb(59, 59, 59);
+    font-size: .7em;
+}
+
+p.tom-musica {
+    text-align: center;
+}
+section#musicas-pesquisa {
+    margin: 15px 0px 50px 0px;
+    background-color: rgb(248, 248, 248);
+    padding: 5px 15px 15px 15px;
+    border-radius: 15px;
+}
+
+div.musica-container-pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-bottom: 1px solid rgb(170, 170, 170);
+    cursor: pointer;
+}
+
+div.video-musica-autor-container-pesquisa {
+    display: flex;
+}
+
+section#musicas-pesquisa img {
+    width: 60px;
+    margin-right: 10px;
+    border-radius: 4px 4px;
+}
+
+div.musica-autor-pesquisa {
+    display: flex;
+    flex-direction: column;
+}
+
+div.link-musica-pesquisa {
+    text-decoration: none;
+    color: black;
+}
+
+p.autor-pesquisa {
+    color: rgb(59, 59, 59);
+    font-size: .7em;
+}
+
+p.tom-musica-pesquisa {
+    text-align: center;
+}
+
+button#btn-adicionar-musica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 82px;
+    right: 20px;
+    border-radius: 50%;
+    border: 1px solid rgb(59, 59, 59);
+    box-shadow: 1px 1px 2px #888;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+button#btn-adicionar-musica a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+section.adicionar-musica {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.712);
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    z-index: 2;
+}
+
+div.adicionar-musica-container {
+    position: absolute;
+    background-color: rgb(248, 248, 248);
+    border-radius: 15px;
+    margin: 25px;
+}
+
+div.adicionar-musica-close {
+    display: flex;
+    justify-content: right;
+}
+
+div.adicionar-musica-container h1 {
+    display: block;
+    padding: 20px 0px;
+    width: 80%;
+    text-align: center;
+}
+
+div.adicionar-musica-container img {
+    display: inline-block;
+    text-align: right;
+    padding-top: 7px;
+    padding-right: 7px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+section.adicionar-musica form {
+    background-color: #EAEAEA;
+    border-radius: 15px;
+    padding: 15px 20px 20px 20px;
+}
+
+section.adicionar-musica label {
+    font-size: 1.1em;
+}
+
+section.adicionar-musica input, select {
+    width: 100%;
+    margin: 5px 0px 20px 0px;
+    height: 35px;
+    border-radius: 10px;
+    border: 0px;
+    padding-left: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.100);
+    outline: none;
+}
+
+section.adicionar-musica textarea {
+    width: 100%;
+    margin: 5px 0px 15px 0px;
+    resize: none;
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.100);   
+    outline: none;
+}
+
+section.adicionar-musica button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 7px 0px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    background-color: rgb(248, 248, 248);
+    border-top: 1px solid rgb(100, 100, 100);
+    transition: bottom 0.3s ease-in-out;
+}
+
+div.nome-span-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+span.icons-footer {
+    font-size: 2em;   
+    color: black;
+    padding: 10px;
+}
+
+span.icons-footer:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer p {
+    font-size: .8em;
+}
+

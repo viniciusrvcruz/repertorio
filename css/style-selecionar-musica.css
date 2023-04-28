@@ -1,0 +1,320 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAEAEA;
+}
+
+header section {
+    display: flex;
+    background-color: rgb(248, 248, 248);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+button.voltar, button.menu {
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+header h1 {
+    font-size: .9em;
+}
+
+button.voltar img {
+    width: 32px;
+    height: 32px;
+}
+
+button.menu img {
+    width: 20px;
+    height: 20px;
+}
+
+div.opcoes-container {
+    display: none;
+    position: fixed;
+    justify-content: right;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+div.opcoes-container div.opcoes {
+    position: absolute;
+    margin: auto;
+    padding: 5px 0px;
+    background-color: #bbbbbb;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+div.opcoes a {
+    text-decoration: none;
+}
+
+div.opcoes p {
+    margin: 5px 0px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+div.opcoes p:hover {
+    background-color: #DADADA;
+}
+
+section.video iframe {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+section.letra-container {
+    margin-bottom: 25px;
+    background-color: rgb(248, 248, 248);
+    padding: 15px 25px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+div.nome-anotacoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.nome-autor-tom h1 {
+    font-size: 1.4em;
+}
+
+div.nome-autor-tom h3 {
+    margin-bottom: 5px;
+    font-size: .9em;
+}
+
+div.nome-autor-tom h2 {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+button.btn-anotacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+button.btn-anotacoes img {
+    width: 35px;
+    height: 35px;
+}
+
+div.letra p {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+section.editar-musica {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.712);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+div.editar-musica-container {
+    background-color: rgb(248, 248, 248);
+    border-radius: 15px;
+    margin: 0px 25px;
+}
+
+div.editar-musica-close {
+    display: flex;
+    justify-content: right;
+}
+
+div.editar-musica-container h1 {
+    display: block;
+    padding: 20px 0px;
+    width: 80%;
+    text-align: center;
+}
+
+div.editar-musica-container img {
+    display: inline-block;
+    text-align: right;
+    padding-top: 7px;
+    padding-right: 7px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+section.editar-musica form {
+    background-color: #EAEAEA;
+    border-radius: 15px;
+    padding: 15px 20px 20px 20px;
+}
+
+section.editar-musica label {
+    font-size: 1.1em;
+}
+
+section.editar-musica input, select {
+    width: 100%;
+    margin: 5px 0px 20px 0px;
+    height: 35px;
+    border-radius: 10px;
+    border: 0px;
+    padding-left: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.100);
+    outline: none;
+}
+
+section.editar-musica textarea {
+    width: 100%;
+    margin: 5px 0px 15px 0px;
+    resize: none;
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.100);   
+    outline: none;
+}
+
+section.editar-musica button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 7px 0px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.comentario-musica {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.712);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+div.comentario-musica-container {
+    background-color: rgb(248, 248, 248);
+    border-radius: 15px;
+    margin: 0px 25px;
+    width: 85%;
+}
+
+div.comentario-musica-close {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    padding: 0px 0px 0px 20px;
+}
+
+div.comentario-header {
+    display: flex;
+    justify-content: center;
+}
+
+div.comentario-musica-container h1 {
+    margin: auto;
+    font-size: 1.5em;
+    padding: 20px 20px 10px;
+    width: 80%;
+    text-align: center;
+}
+
+div.comentario-musica-container h2 {
+    font-size: 1.4em;
+}
+
+div.comentario-musica-container h3 {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+div.comentario-musica-container img {
+    display: inline-block;
+    text-align: right;
+    padding-top: 7px;
+    padding-right: 7px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+section.comentario-musica form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #EAEAEA;
+    border-radius: 15px;
+    padding: 15px 20px 20px 20px;
+}
+
+section.comentario-musica form textarea {
+    width: 100%;
+    margin: 5px 0px 15px 0px;
+    resize: none;
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.100);   
+    outline: none;
+}
+
+section.comentario-musica button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 7px 0px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
