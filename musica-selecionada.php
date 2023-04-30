@@ -30,7 +30,7 @@
             <div class="opcoes-container">
                 <div class="opcoes">
                     <p onclick="document.querySelector('.editar-musica').style.display = 'flex';document.querySelector('.opcoes-container').style.display = 'none';">Editar</p>
-                    <p>Compartilhar</p>
+                    <p onclick="share()">Compartilhar</p>
                     <p onclick="if(confirm('Deseja mesmo excluir a música?')){location.href='?page=excluir-musica&id=<?php print $row->id;?>'}else{false}">Excluir</p>
                 </div>
             </div>

@@ -42,3 +42,15 @@ if(document.querySelector('.comentario-musica')) {
         }
     })
 }
+
+function share(){
+	if (navigator.share !== undefined) {
+		navigator.share({
+			title: 'Repertório',
+			text: 'Um texto de resumo',
+			url: 'https://www.youtube.com/',
+		})
+		.then(() => console.log('Successful share'))
+		.catch((error) => console.log('Error sharing', error));
+	}
+}
