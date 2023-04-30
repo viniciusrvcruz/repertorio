@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    -webkit-tap-highlight-color: transparent;
+  }  
+
 body {
     background-color: rgb(230, 230, 230);
 }
@@ -129,6 +133,7 @@ div.musica-container {
     padding: 15px 0px;
     border-bottom: 1px solid rgb(170, 170, 170);
     cursor: pointer;
+    user-select: none;
 }
 
 div.video-musica-autor-container {

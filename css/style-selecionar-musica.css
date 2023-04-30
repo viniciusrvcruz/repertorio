@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    -webkit-tap-highlight-color: transparent;
+}  
+
 body {
     background-color: #EAEAEA;
 }
@@ -137,6 +141,7 @@ div.letra p {
     margin-bottom: 25px;
     font-size: 1.1em;
     font-weight: bold;
+    line-height: 1.3em;
 }
 
 section.editar-musica {
