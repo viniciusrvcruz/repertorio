@@ -65,10 +65,6 @@ div.opcoes-container div.opcoes {
     z-index: 3;
 }
 
-div.opcoes a {
-    text-decoration: none;
-}
-
 div.opcoes p {
     margin: 5px 0px;
     font-size: 1.1em;

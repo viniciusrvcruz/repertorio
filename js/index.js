@@ -14,6 +14,26 @@ pesquisar.addEventListener('input', () => {
     mostrarPesquisa()
 })
 
+document.querySelector('.icons-menu-user').addEventListener('click', (e) => {
+    divClick = e.target
+    buttonMenu = document.querySelector('.menu')
+    imgMenu = document.querySelector('.menu-img')
+    divContainer = document.querySelector('.opcoes-container')
+
+    if(divClick == buttonMenu || divClick == imgMenu) {
+        divContainer.style.display = 'flex'
+    }
+})
+
+document.querySelector('.opcoes-container').addEventListener('click', (e) => {
+    divClick = e.target
+    divContainer = document.querySelector('.opcoes-container')
+    
+    if(divClick == divContainer) {
+        divContainer.style.display = 'none'
+    }
+})
+
 document.querySelector('#button-voltar-pesquisar').addEventListener('click', () => {
     pesquisar.value = ''
     document.querySelector('#button-voltar-pesquisar').style.display = 'none'
@@ -60,4 +80,16 @@ function mostrarPesquisa() {
             }
         }
     }
+}
+
+function share(){
+	if (navigator.share !== undefined) {
+		navigator.share({
+			title: 'Repertório',
+			text: 'Esse é o meu repertório',
+			url: 'https://projeto-teste1.000webhostapp.com/',
+		})
+		.then(() => console.log('Successful share'))
+		.catch((error) => console.log('Error sharing', error));
+	}
 }

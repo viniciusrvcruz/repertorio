@@ -23,12 +23,13 @@
                 <h3></h3>
             </div>
             <div class="icons-menu-user">
-                <span class="material-symbols-outlined icon-menu">
-                    menu
-                </span>
-                <span class="material-symbols-outlined">
-                    group
-                </span>
+                <button class="menu"><img src="Icons/menu_lines_hamburger_icon.png" alt="Menu" class="menu-img"></button>
+                <div class="opcoes-container">
+                    <div class="opcoes">
+                        <p onclick="share()">Compartilhar</p>
+                    </div>
+                </div>
+                <button class="grupo"><img src="Icons/group_people_icon.png" alt="Grupo"></button>
             </div>
         </section>
         <div id="pesquisar">

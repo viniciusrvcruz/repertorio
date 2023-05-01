@@ -53,10 +53,59 @@ h3 {
 div.icons-menu-user {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-span.icon-menu {
-    padding-bottom: 8px;
+div.icons-menu-user button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button.grupo {
+    margin-top: 5px;
+}
+
+div.icons-menu-user img {
+    width: 25px;
+}
+
+div.opcoes-container {
+    display: none;
+    position: fixed;
+    justify-content: right;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+div.opcoes-container div.opcoes {
+    position: absolute;
+    margin: auto;
+    background-color: #bbbbbb;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+div.opcoes p {
+    margin: 5px 0px;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+div.opcoes p:hover {
+    background-color: #DADADA;
 }
 
 div#pesquisar {
