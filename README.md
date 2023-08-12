@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-Esse projeto é uma aplicação full stack web. onde é possível cadastrar músicas no repertório com o nome, letra, cantor, tom e link da música, as informações ficam salvas através de um banco de dados MySql também sendo possível editar, e excluir. 
+Esse projeto é uma aplicação full stack web. onde é possível cadastrar músicas no repertório com o nome, letra, cantor, tom e link da música, as informações ficam salvas através do banco de dados MySql também sendo possível editar, e excluir. 
 
 As músicas cadastradas são listadas no site, podendo ser seleciondas onde irá mostrar todas as informações dela e também sendo possível adicionar anotações que ficam salvas.
 
