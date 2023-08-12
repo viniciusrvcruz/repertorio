@@ -319,3 +319,42 @@ section.comentario-musica button {
     border-radius: 10px;
     cursor: pointer;
 }
+
+@media (min-width: 420px) {
+    header section {
+        padding: 5px 70px;
+    }
+
+    section.video iframe {
+        width: 70%;
+        height: 200px;
+    }
+
+    section.letra-container {
+        padding: 15px 70px;
+    }
+}
+
+@media (min-width: 700px) {
+    section.video iframe {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1080px) {
+    header section {
+        padding: 5px 70px;
+    }
+
+    section.video iframe {
+        position: absolute;
+        width: 36%;
+        height: 260px;
+        transform: translate(110%, 0);
+    }
+
+    section.letra-container {
+        margin: 25px 0px 25px;
+    }
+}
+

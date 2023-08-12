@@ -411,3 +411,38 @@ footer p {
     font-size: .8em;
 }
 
+@media (min-width: 620px) {
+    header {
+        padding: 10px 70px 5px;
+    }
+
+    section#nome-repertorio {
+        padding: 10px 70px;
+    }
+
+    h2 {
+        margin-left: 0px;
+    }
+    
+    div#pesquisar {
+        margin: 0px 70px
+    }
+
+    button#button-pesquisar {
+        width: 8%;
+    }
+    
+    button#button-voltar-pesquisar {
+        width: 8%;
+    }
+    
+    input#pesquisar-musica {
+        width: 92%;
+    }
+
+    section#musicas {
+        margin: 15px 70px 50px;
+        padding: 5px 40px 15px;
+    }
+  }
+
