@@ -8,12 +8,12 @@ Esse projeto é uma aplicação full stack web. onde é possível cadastrar mús
 As músicas cadastradas são listadas no site, podendo ser seleciondas onde irá mostrar todas as informações dela e também sendo possível adicionar anotações que ficam salvas.
 
 ## Layout mobile
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
+![Mobile 1](https://github.com/viniciusrvcruz/repertorio/blob/main/assets/mobile1.png) ![Mobile 2](https://github.com/viniciusrvcruz/repertorio/blob/main/assets/mobile2.png)
 
 ## Layout web
-![Web 1](https://github.com/acenelio/assets/raw/main/sds1/web1.png)
+![Web 1](https://github.com/viniciusrvcruz/repertorio/blob/main/assets/web1.png)
 
-![Web 2](https://github.com/acenelio/assets/raw/main/sds1/web2.png)
+![Web 2](https://github.com/viniciusrvcruz/repertorio/blob/main/assets/web2.png)
 
 ## Modelo conceitual
 ![Modelo Conceitual](https://github.com/acenelio/assets/raw/main/sds1/modelo-conceitual.png)
