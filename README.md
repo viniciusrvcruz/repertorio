@@ -16,7 +16,7 @@ As músicas cadastradas são listadas no site, podendo ser seleciondas onde irá
 ![Web 2](https://github.com/viniciusrvcruz/repertorio/blob/main/assets/web2.png)
 
 ## Modelo conceitual
-![Modelo Conceitual](https://github.com/acenelio/assets/modeloConceitual.png)
+![Modelo Conceitual](https://github.com/viniciusrvcruz/repertorio/blob/main/assets/modeloConceitual.png)
 
 # Tecnologias utilizadas
 - HTML / CSS / JS / PHP / MySql
